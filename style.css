@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    max-width: 1440px;
+}
+
+.card{
+    padding: 2px;
+    border-radius: 10px;
+    margin: 100px auto;
+    width: 280px;
+    height: 460px;
+    background-color: hsl(216, 50%, 16%);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
+}
+
+.img-wrapper{
+    position: relative;
+    overflow: hidden;
+    border: solid 1px white;
+    border-radius: 8px;
+    margin: 15px;
+}
+
+.nft-img img{
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.hover-effect{
+    position: absolute;
+    inset: 0;
+    border: 1px solid white;
+    padding: 1rem;
+    background-color: rgba(0, 255, 248, 0.4);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nft-title{
+    margin: 10px auto;
+    width: 250px;
+    color: hsl(0, 0%, 100%);
+}
+
+.nft-description{
+    font-size: 15px;
+    margin: 10px auto;
+    width: 250px;
+    color: hsl(215, 51%, 70%);
+}
+
+.price-duration{
+    padding: 5px;
+    font-size: 15px;
+    margin: 10px auto;
+    width: 250px;
+    color: hsl(215, 51%, 70%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.price{
+    color: hsl(178, 100%, 50%);
+}
+.price-logo{
+    margin-bottom: -4px;
+    margin-right: 5px;
+    
+}
+.clock-logo{
+    margin-bottom: -3px;
+}
+.line{
+    margin: 10px auto;
+    width: 250px;
+    opacity: 50%;
+    height: 1px;
+    border: none;
+    background-color: hsl(215, 32%, 27%);
+}
+
+.card-bottom{
+    width: 250px;
+    height: 30px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    
+}
+
+.created-by{
+    font-size: 15px;
+    margin: 10px;
+    margin-left: 7px;
+    width: 200px;
+    color: hsl(215, 51%, 70%);
+}
+
+.created-by span{
+    color: white;
+}
+
+.pfp img{
+    margin-top: 5px;
+    width: 24.9px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+
+.hover-effect{
+    transition: 200ms ease-in-out;
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.img-wrapper >  .hover-effect.fade{
+    opacity: 0;
+}
+.img-wrapper:hover > .hover-effect.fade{
+    opacity: 1;
+}
+
+.nft-title:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+
+}
