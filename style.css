@@ -29,7 +29,6 @@ body{
 .img-wrapper{
     position: relative;
     overflow: hidden;
-    border: solid 1px white;
     border-radius: 8px;
     margin: 15px;
 }
